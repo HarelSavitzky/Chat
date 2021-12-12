@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+</head>
+<body>
+
+<h1>Internet Course B - Exercise 4</h1>
+<h2>Authors</h2>
+<ul>
+    <li>Alexander Bord</li>
+    <li>ID 319263836</li>
+    <li>hlexandorbo@hac.ac.il</li>
+    <hr>
+    <li>Harel Savitzky</li>
+    <li>ID 305390692</li>
+    <li>harelsa@hac.ac.il</li>
+</ul>
+<hr>
+<h3> Api <a href="doc/com.example.demo/package-summary.html"> click here </a></h3>
+<hr>
+<h2>Execution</h2>
+<pre>
+
+The purpose of the exercise:
+to build a website that allows access to the chat room and sending messages
+This exercise will not be Servlets but only using Spring MVC technology.
+The site uses a SQL database to store the chat messages and the connected users.
+The database name is ex4.
+
+Login page:
+A user registers his name, presses the login button, and goes to the chat page.
+At the same time other users can be connected to chat.
+
+Login page includes:
+• Text-type input for receiving the user name.
+• Chat room login button
+
+Chatroom page:
+• Available only to a logged in user, otherwise do not view it at all and go to the login screen.
+• When a user logs in we will only show him the last 5 messages of the chat.
+
+A list of all connected users will appear, updated in real time (polling mechanism).
+
+Chatroom page includes:
+• Title text: Welcome username.
+• text input and a button to send a message to chat
+• Chat exit button (logout)
+• Chat: The most recent messages sent (with sender name and message).
+  Empty messages (including spaces only) are avoided.
+• Search,Available only to a logged in user.
+  This function will allow you to search text within the database by username or message content.
+
+
+The program protects pages, treated errors and critical sections are handled.
+The program contains 2 main controllers that responsible of login / chat.
+
+spring technologies in use:
+ •thymeleaf
+ •beans
+ •listeners
+ •models
+ •views
+ •JPA with mysql DAO
+ •Ajax
+</pre>
+
+<h2>Assumptions</h2>
+<p>Spring</p>
+
+<address>Submitted 17 june 2021 </address>
+</body>
+</html>
